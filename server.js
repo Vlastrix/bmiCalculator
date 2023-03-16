@@ -28,7 +28,7 @@ app.post("/", function(req, res) {
     const height = Number(req.body.height);
     const bmiCalculated = Math.round(weight / height**2);
     const bmiExplained = bmiCalculator(bmiCalculated);
-    res.send(bmiExplained)
+    res.send(bmiExplained);
 });
 
 app.listen(3000, function() {
